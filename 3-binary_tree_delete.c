@@ -10,7 +10,7 @@ void binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree)
 	{
-		if (tree->left == NULL && tree->right == NULL)
+		if (tree->left == NULL && tree->right == NULL && tree->parent != NULL)
 			return;
 		if (tree->left)
 			binary_tree_delete(tree->left);
