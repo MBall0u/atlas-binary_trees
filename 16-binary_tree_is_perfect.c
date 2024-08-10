@@ -1,13 +1,14 @@
 #include "binary_trees.h"
 /**
  * binary_tree_is_perfect - see below
- * Description - checks the given node to see if the tree is perfect
+ * Description - checks the given node to see if the tree
+ * is perfect
  * @tree: the inputted node
  * Return: Always 1 (perfect)
 */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int l_count = 0, r_count = 0;;
+	int l_count = 0, r_count = 0;
 
 	if (tree)
 	{
