@@ -17,10 +17,10 @@ int binary_tree_balance(const binary_tree_t *tree)
 			right_count = 1 + binary_tree_balance(tree->right);
 		if (tree->parent)
 		{
-			if (tree->left >= tree->right)
-				return (tree->left);
-			if (tree->right >= tree->left)
-				return (tree->right);
+			if (left_count >= right_count)
+				return (left_count);
+			if (right_count >= left_count)
+				return (right_count);
 		}
 		return (left_count - right_count);
 	}
